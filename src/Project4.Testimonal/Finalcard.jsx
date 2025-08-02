@@ -10,7 +10,7 @@ const Finalcard = () => {
                 <h1 className="text-4xl font-bold">Our Testimonal</h1>
             </div>
             <div className="bg-violet-400 h-[4px] w-1/5 mx-auto mt-1"></div>
-            <div> <Testimonal reviews={reviews} /></div>
+            <div className="mt-9"> <Testimonal reviews={reviews} /></div>
 
         </div>
     )
