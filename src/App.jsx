@@ -1,12 +1,13 @@
 import "./index.css"
 import "./App.css"
-import FinalComp from "./Project3/FinalComp"
+
+import Finalcard from "./Project4.Testimonal/Finalcard"
 
 
 
 
 const App = () => {
-  return <FinalComp/>
+  return <Finalcard/>
 
 }
 

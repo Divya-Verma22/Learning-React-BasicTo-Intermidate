@@ -1,7 +1,7 @@
 @import "tailwindcss";
-
-/* --------------------------------- cards project css ----------------------------- */
-/* *{
+/*
+--------------------------------- cards project css -----------------------------
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -10,6 +10,7 @@
 body{
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 .container{
   display: flex;
@@ -29,8 +30,8 @@ body{
 
 .cards{
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center;
+  
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 1300px;
   margin: 0 auto;
@@ -65,9 +66,9 @@ body{
 }
 .name{
   font-size: 1.5rem;
-} */
+}
 
-/* .read{
+ .read{
   color: blue;
   cursor: pointer;
 }
@@ -110,9 +111,8 @@ border: 2px solid white;
   color: black;
   transition: all 0.2s;
 }
-  */
 
+*/
 
-
-  /* -----------------project 3 css ------------------- */
+  
   

@@ -8,18 +8,11 @@ const Card = (props) => {
     let setlikecourse = props.setLikedCourses;
 
 
-    // console.log("card ka andar hun");
-    // console.log(course)
-
-
     function clickHandler() {
-
-        if (likecourse.includes(course.id)) {
+         if (likecourse.includes(course.id)) {
             // already like
             setlikecourse((prev) => prev.filter((cid) => (cid !== course.id)));
-            toast.warning("Liked Removed")
-
-        }
+            toast.warning("Liked Removed") }
         else {
             if (likecourse.length === 0) {
                 setlikecourse([course.id]);
@@ -38,8 +31,8 @@ const Card = (props) => {
 
             <div className="relative">
                 <img src={course.image.url} alt="" />
-                <div className="w-[30px] h-[30px] bg-white rounded-full
-                     absolute right-2 bottom-3 grid place-items-center">
+                <div className="w-[40px] h-[40px] bg-white rounded-full
+                     absolute right-2 bottom-[-12px] grid place-items-center">
                     <button onClick={clickHandler}>
                         {
                             likecourse.includes(course.id) ?
