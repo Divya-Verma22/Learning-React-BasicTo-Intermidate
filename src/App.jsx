@@ -1,16 +1,19 @@
 import "./index.css"
 import "./App.css"
 
-import Finalcard from "./Project4.Testimonal/Finalcard"
-import Form from "./Form/Form"
-import FinalForm from "./Form/FinalForm"
+
+import FinalApp from "./React-Routing-Project5/FinalApp"
+import Template from "./React-Routing-Project5/CommonComponents/Templete"
 
 
 
 
 const App = () => {
-  return <FinalForm/>
-
+  return (
+    <div>
+                <FinalApp/>
+    </div>
+  )
 }
 
 export default App;

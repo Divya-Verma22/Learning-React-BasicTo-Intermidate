@@ -8,6 +8,7 @@ import Filterdata from "./Filterdata";
 import { apiUrl } from "./Filterdata";
 import { toast } from "react-toastify";
 import Spinner from "./Spinner";
+import { Outlet } from "react-router-dom";
 
 
 const FinalComp = () => {
@@ -41,6 +42,7 @@ const FinalComp = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-gray-600">
+         
             <div> <Navbar /> </div>
             <div className="bg-gray-600">
                 <div><Filter Filterdata={Filterdata} category={category} setCategory={setCategory} /></div>
