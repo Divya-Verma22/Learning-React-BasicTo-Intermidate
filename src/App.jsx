@@ -1,20 +1,15 @@
-import "./index.css"
-import "./App.css"
 
+import './App.css'
+import FinalGIF from './Project6/FinalGIF'
 
-import FinalApp from "./React-Routing-Project5/FinalApp"
-import Template from "./React-Routing-Project5/CommonComponents/Templete"
+function App() {
+  
 
-
-
-
-const App = () => {
   return (
     <div>
-                <FinalApp/>
+      <FinalGIF/>
     </div>
   )
 }
 
-export default App;
-
+export default App

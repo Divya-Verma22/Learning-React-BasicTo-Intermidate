@@ -6,19 +6,20 @@ const Navbar = ({ isUserLoged, setIsUserLoged }) => {
 
 
     return (
-        <div className="flex justify-evenly">
-            <Link to="/"><img src={logoUrl}  className="invert"
-                alt="logo" width={160} height={32} loading = "lazy"
-             /></Link>
+        <>
+        <div className=" flex justify-evenly items-center w-screen   ">
+            <Link to="/"><img src={logoUrl} className="invert"
+                alt="logo" width={160} height={32} loading="lazy"
+            /></Link>
 
             <nav>
-                <ul className="flex  font-semibold font-serif text-2xl space-x-20 justify-center ">
+                <ul className=" text-white flex gap-x-6 ">
                     <li>
                         <Link to="/" > Home</Link>
 
                     </li>
                     <li>
-                        <Link to="/about" > About</Link>
+                        <Link to="/about" > about</Link>
 
                     </li>
                     <li>
@@ -29,33 +30,39 @@ const Navbar = ({ isUserLoged, setIsUserLoged }) => {
                 </ul>
             </nav>
 
-            <div className=" flex gap-4 ml-4 mr-2">
+            <div className=" flex items-center gap-x-4">
                 {
                     !isUserLoged &&
-                    <Link to="/login"> <button
-                        className="border p-2 m-2 rounded-2xl text-black bg-white ">
+                    <Link to="/login"> <button className="bg-gray-700 border-black text-white px-6 py-2 rounded-xl font-semibold shadow-lg  hover:bg-white hover:text-black  transition-all duration-300 ">
                         Login</button> </Link>
                 }
                 {
                     !isUserLoged &&
-                    <Link to="/signup">  <button className="border p-2 m-2 rounded-2xl text-black bg-white ">Sign Up</button> </Link>
+                    <Link to="/signup">  <button className="bg-gray-700 border-x-black text-white p-6 py-2 rounded-xl font-semibold shadow-lg  hover:bg-white hover:text-black  transition-all duration-300 ">
+                        Sign In
+                    </button>
+                    </Link>
                 }
                 {
                     isUserLoged &&
-                    <Link to="/"> <button onClick={() => {
+                    <Link to="/"> <button className="bg-gray-700 border-black text-white px-6 py-2 rounded-xl font-semibold shadow-lg  hover:bg-white hover:text-black  transition-all duration-300 "
+                
+                     onClick={() => {
                         setIsUserLoged(false);
+
                         toast.success("Logged out");
                     }}>log Out</button> </Link>
                 }
                 {
                     isUserLoged &&
-                    <Link to="/dashboard"> <button>Dashboard</button> </Link>
+                    <Link to="/dashboard"> <button className="bg-gray-700 border-black text-white px-6 py-2 rounded-xl font-semibold shadow-lg  hover:bg-white hover:text-black  transition-all duration-300 ">Dashboard</button> </Link>
                 }
-            </div>
+            </div >
 
 
 
-        </div>
+        </div >
+        </>
     )
 }
 export default Navbar;

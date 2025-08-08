@@ -1,10 +1,9 @@
-import { FiVideo } from "react-icons/fi"
-
-const  Home = () =>{
+const Home = () => {
     return (
-        <div>
-               Home
+        <div className="bg-black min-h-screen flex items-center justify-center">
+            <p className="text-white font-semibold ">Home</p>
         </div>
-    )
-}
+    );
+};
+
 export default Home;
